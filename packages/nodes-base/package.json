@@ -8,7 +8,7 @@
     "copy-nodes-json": "node scripts/copy-nodes-json.js .",
     "dev": "pnpm watch",
     "typecheck": "tsc --noEmit",
-   "build": "echo 'Skipping nodes-base build on Render due to memory limits'",
+   "build": "cd packages/cli && pnpm build",
     "format": "biome format --write .",
     "format:check": "biome ci .",
     "lint": "eslint nodes credentials utils test --quiet && node ./scripts/validate-load-options-methods.js",
